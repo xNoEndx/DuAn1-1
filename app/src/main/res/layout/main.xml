@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#E0D3D3"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -35,13 +36,100 @@
 
     <LinearLayout
         android:layout_width="360dp"
-        android:layout_height="150dp"
-        android:background="#FFFFFF"
-        app:circularflow_radiusInDP="15dp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="66dp">
+        android:layout_height="180dp"
+        android:background="@drawable/momo"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="59dp"></LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="horizontal"
+        android:layout_margin="1dp"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="250dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgGiatUi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/giatui"/>
+            <TextView
+                android:id="@+id/tvGiatUi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tạo đơn giặt ùi"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgDatLich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/datlich"/>
+            <TextView
+                android:id="@+id/tvDatLich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đặt lịch giao nhận"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgTraCuu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tracuu"/>
+            <TextView
+                android:id="@+id/tvTraCuu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tra cứu dịch vụ"
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgGiaoHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/giaohang"/>
+            <TextView
+                android:id="@+id/tvGiaoHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tạo đơn giặt ùi"
+        </LinearLayout>
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
